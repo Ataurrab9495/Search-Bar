@@ -45,7 +45,7 @@ function App() {
               placeholder={load === true ? value[0].title : "search..."}
               id="inputPassword5"
               aria-describedby="passwordHelpBlock"
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={(event) => setQuery(event.target.value)}
             />
 
           </div>
