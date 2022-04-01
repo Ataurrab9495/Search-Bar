@@ -1,4 +1,3 @@
-
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -35,7 +34,7 @@ function App() {
   } else {
     return (
       <>
-        <Container className="d-flex flex-column justify-content-center mt-5" style={{ minHeight: "100vh" }}>
+        <Container className="d-flex flex-column mt-5" style={{ minHeight: "100vh" }}>
           <div className='w-100' style={{ maxWidth: "600px" }}>
             <div className='text-center'>
               <h1>Search</h1>
@@ -51,7 +50,7 @@ function App() {
           </div>
           <div className='mt-3'>
             {value.filter((data) => {
-              if (query === '') {
+              if (query === "") {
                 return data;
               } else if (data.title.toLowerCase().includes(query.toLowerCase())) {
                 return data;
